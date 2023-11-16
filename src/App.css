@@ -15,7 +15,7 @@ body {
   background-size: cover;
   min-height: 100vh;
   background-repeat: repeat-y;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 body::before {
   content: "";
@@ -24,13 +24,21 @@ body::before {
   left: 0;
   width: 100%;
   min-height: 100vh;
-  background-color: rgba(255, 122, 122, 0.5);
+  background-color: rgba(255, 122, 122, 0.6);
   background-repeat: repeat-y;
   z-index: -1;
 }
 
 #header-container {
   margin-top: 4rem;
+}
+#header-container h1 {
+  font-weight: 600;
+}
+
+#hero-btn {
+  background-color: hsl(248, 32%, 49%);
+  box-shadow: 0 0.5rem 0.5rem rgba(62, 60, 73, 0.4);
 }
 
 .attribution {
