@@ -8,9 +8,8 @@ function App() {
   return (
     <>
       <Header />
-      <div className="row">
-        <Hero />
-      </div>
+
+      <Hero />
       <Footer />
     </>
   )
