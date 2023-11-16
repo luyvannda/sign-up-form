@@ -21,8 +21,7 @@ $neutral-grayish-blue: hsl(246, 25%, 77%);
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-image: url('images/bg-intro-mobile.png');
-  background-size: cover;
+  background-color: $primary-red;
   min-height: 100vh;
   background-repeat: repeat-y;
   overflow: hidden;
@@ -34,7 +33,8 @@ body {
     left: 0;
     width: 100%;
     min-height: 100vh;
-    background-color: rgba($primary-red, 0.6);
+    background-image: url('images/bg-intro-mobile.png');
+    background-size: cover;
     background-repeat: repeat-y;
     z-index: -1;
   }

@@ -11,8 +11,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-image: url("images/bg-intro-mobile.png");
-  background-size: cover;
+  background-color: hsl(0, 100%, 74%);
   min-height: 100vh;
   background-repeat: repeat-y;
   overflow: hidden;
@@ -24,7 +23,8 @@ body::before {
   left: 0;
   width: 100%;
   min-height: 100vh;
-  background-color: rgba(255, 122, 122, 0.6);
+  background-image: url("images/bg-intro-mobile.png");
+  background-size: cover;
   background-repeat: repeat-y;
   z-index: -1;
 }
