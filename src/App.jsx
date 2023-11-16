@@ -1,12 +1,12 @@
 import './App.css'
-import Bootstrap from './components/BootStrap'
 import Footer from './components/Footer'
+import Header from './components/Header'
 
 function App() {
 
   return (
     <>
-      <Bootstrap />
+      <Header />
       <Footer />
     </>
   )

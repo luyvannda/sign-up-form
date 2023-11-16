@@ -1,3 +1,10 @@
+$primary-red: hsl(0, 100%, 74%);
+$primary-green: hsl(154, 59%, 51%);
+$accent-blue: hsl(248, 32%, 49%);
+$neutral-dark-blue: hsl(249, 10%, 26%);
+$neutral-grayish-blue: hsl(246, 25%, 77%);
+
+
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +17,25 @@
   }
 }
 
+body {
+  background-image: url('images/bg-intro-mobile.png');
+  background-size: cover;
+  height: 100vh;
 
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($primary-red, 0.5);
+  }
+}
+
+#header-container {
+  margin-top: 4rem;
+}
 
 .attribution {
   font-size: 11px;
