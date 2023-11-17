@@ -24,7 +24,7 @@ body {
   background-color: $primary-red;
   min-height: 100vh;
   background-repeat: repeat-y;
-  overflow: hidden;
+  overflow-x: hidden;
 
   &::before {
     content: '';
@@ -51,6 +51,27 @@ body {
 #hero-btn {
   background-color: $accent-blue;
   box-shadow: 0 0.5rem 0.5rem rgba($neutral-dark-blue, 0.4);
+}
+
+#form-container {
+  background-color: white;
+  width: 20rem;
+  padding: 0.5rem;
+  box-shadow: 0 0.5rem 0.5rem rgba($neutral-dark-blue, 0.4);
+
+  .form-control {
+    color: $neutral-grayish-blue;
+    font-weight: 500;
+  }
+
+  #form-btn {
+    background-color: $primary-green;
+  }
+
+  #term-text {
+    font-size: 0.75rem;
+    color: $neutral-grayish-blue;
+  }
 }
 
 .attribution {
