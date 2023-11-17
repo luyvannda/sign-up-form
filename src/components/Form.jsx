@@ -12,6 +12,9 @@ export default function Form() {
             placeholder="First Name"
             required
           />
+          <div className="float-end">
+            <span className="invalid-feedback ">First Name cannot be empty</span>
+          </div>
         </div>
         <div className="mb-3">
           <label htmlFor="lastName" className="form-label"></label>
@@ -22,6 +25,9 @@ export default function Form() {
             placeholder="Last Name"
             required
           />
+          <div className="float-end">
+            <span className="invalid-feedback ">Last Name cannot be empty</span>
+          </div>
         </div>
         <div className="mb-3">
           <label htmlFor="email" className="form-label"></label>
@@ -32,6 +38,9 @@ export default function Form() {
             placeholder="Email Address"
             required
           />
+          <div className="float-end">
+            <span className="invalid-feedback ">Looks like this is not an email</span>
+          </div>
         </div>
         <div className="mb-3">
           <label htmlFor="password" className="form-label"></label>
@@ -42,8 +51,11 @@ export default function Form() {
             placeholder="Password"
             required
           />
+          <div className="float-end">
+            <span className="invalid-feedback ">Password cannot be empty</span>
+          </div>
         </div>
-        <div className="d-grid mb-3">
+        <div className="d-grid mt-5 mb-3">
           <button id="form-btn" type="submit"
             className="btn text-white">Claim your free trial</button>
         </div>

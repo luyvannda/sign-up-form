@@ -59,20 +59,46 @@ body {
   padding: 0.5rem;
   box-shadow: 0 0.5rem 0.5rem rgba($neutral-dark-blue, 0.4);
 
+  .invalid-feedback {
+    margin-top: 0.25rem;
+    font-size: 60%;
+    color: #dc3545;
+  }
+
   .form-control {
     color: $neutral-grayish-blue;
     font-weight: 500;
-  }
 
-  #form-btn {
-    background-color: $primary-green;
-  }
+    &:valid {
+      border-color: $primary-green;
 
-  #term-text {
-    font-size: 0.75rem;
-    color: $neutral-grayish-blue;
+      &.invalid-feedback {
+        display: block;
+      }
+    }
+
+
+    &:invalid {
+      border-color: red;
+
+      &.invalid-feedback {
+        display: block;
+      }
+    }
+
   }
 }
+
+#form-btn {
+  background-color: $primary-green;
+}
+
+#term-text {
+  font-size: 0.75rem;
+  color: $neutral-grayish-blue;
+}
+
+
 
 .attribution {
   font-size: 11px;

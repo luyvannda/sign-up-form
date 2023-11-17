@@ -47,14 +47,33 @@ body::before {
   padding: 0.5rem;
   box-shadow: 0 0.5rem 0.5rem rgba(62, 60, 73, 0.4);
 }
+#form-container .invalid-feedback {
+  margin-top: 0.25rem;
+  font-size: 60%;
+  color: #dc3545;
+}
 #form-container .form-control {
   color: hsl(246, 25%, 77%);
   font-weight: 500;
 }
-#form-container #form-btn {
+#form-container .form-control:valid {
+  border-color: hsl(154, 59%, 51%);
+}
+#form-container .form-control:valid.invalid-feedback {
+  display: block;
+}
+#form-container .form-control:invalid {
+  border-color: red;
+}
+#form-container .form-control:invalid.invalid-feedback {
+  display: block;
+}
+
+#form-btn {
   background-color: hsl(154, 59%, 51%);
 }
-#form-container #term-text {
+
+#term-text {
   font-size: 0.75rem;
   color: hsl(246, 25%, 77%);
 }
