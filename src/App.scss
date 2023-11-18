@@ -60,7 +60,7 @@ body {
   box-shadow: 0 0.5rem 0.5rem rgba($neutral-dark-blue, 0.4);
 
   .invalid-feedback {
-    display: block;
+    display: inherit;
     margin-top: 0.25rem;
     font-size: 60%;
     color: #dc3545;
@@ -70,22 +70,17 @@ body {
     color: $neutral-grayish-blue;
     font-weight: 500;
 
-    &:valid {
-      border-color: $primary-green;
 
-      &.invalid-feedback {
-        display: none;
-      }
-    }
+    //   &.invalid-feedback {
+    //     display: none;
+    //   }
 
 
-    &:invalid {
-      border-color: red;
 
-      &.invalid-feedback {
-        display: block;
-      }
-    }
+
+    //   &.invalid-feedback {
+    //     display: block;
+    //   }
 
   }
 }

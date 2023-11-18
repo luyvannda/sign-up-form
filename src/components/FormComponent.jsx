@@ -26,8 +26,8 @@ export default function FormComponent() {
             required
             ref={firstName}
             onChange={() => setSubmitted(false)}
-            isInvalid={submitted && !firstName.current.checkValidity()}
-            custom
+          // isInvalid={submitted && !firstName.current.checkValidity()}
+          // custom
           />
 
           <div className="float-end">
@@ -43,8 +43,8 @@ export default function FormComponent() {
               required
               ref={lastName}
               onChange={() => setSubmitted(false)}
-              isInvalid={submitted && !lastName.current.checkValidity()}
-              custom
+            // isInvalid={submitted && !lastName.current.checkValidity()}
+            // custom
             />
             <div className="float-end">
               <Form.Control.Feedback type="invalid">Last Name cannot be empty</Form.Control.Feedback>
@@ -60,8 +60,8 @@ export default function FormComponent() {
               required
               ref={email}
               onChange={() => setSubmitted(false)}
-              isInvalid={submitted && !email.current.checkValidity()}
-              custom
+            // isInvalid={submitted && !email.current.checkValidity()}
+            // custom
             />
 
             <div className="float-end">
@@ -78,8 +78,8 @@ export default function FormComponent() {
               required
               ref={password}
               onChange={() => setSubmitted(false)}
-              isInvalid={submitted && !email.current.checkValidity()}
-              custom
+            // isInvalid={submitted && !email.current.checkValidity()}
+            // custom
             />
             <div className="float-end">
               <Form.Control.Feedback type="invalid">Password cannot be empty</Form.Control.Feedback>
