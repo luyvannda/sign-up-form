@@ -48,6 +48,7 @@ body::before {
   box-shadow: 0 0.5rem 0.5rem rgba(62, 60, 73, 0.4);
 }
 #form-container .invalid-feedback {
+  display: block;
   margin-top: 0.25rem;
   font-size: 60%;
   color: #dc3545;
@@ -60,7 +61,7 @@ body::before {
   border-color: hsl(154, 59%, 51%);
 }
 #form-container .form-control:valid.invalid-feedback {
-  display: block;
+  display: none;
 }
 #form-container .form-control:invalid {
   border-color: red;
