@@ -43,8 +43,7 @@ body::before {
 
 #form-container {
   background-color: white;
-  width: 20rem;
-  padding: 0.5rem;
+  width: 84.99999999%;
   box-shadow: 0 0.5rem 0.5rem rgba(62, 60, 73, 0.4);
 }
 #form-container .invalid-feedback {

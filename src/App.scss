@@ -55,8 +55,7 @@ body {
 
 #form-container {
   background-color: white;
-  width: 20rem;
-  padding: 0.5rem;
+  width: 84.99999999%;
   box-shadow: 0 0.5rem 0.5rem rgba($neutral-dark-blue, 0.4);
 
   .invalid-feedback {
@@ -70,18 +69,6 @@ body {
     color: $neutral-grayish-blue;
     font-weight: 500;
 
-
-    //   &.invalid-feedback {
-    //     display: none;
-    //   }
-
-
-
-
-    //   &.invalid-feedback {
-    //     display: block;
-    //   }
-
   }
 }
 
@@ -93,7 +80,6 @@ body {
   font-size: 0.75rem;
   color: $neutral-grayish-blue;
 }
-
 
 
 .attribution {
