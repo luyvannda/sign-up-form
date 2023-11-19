@@ -28,6 +28,11 @@ body::before {
   background-repeat: repeat-y;
   z-index: -1;
 }
+@media only screen and (min-width: 768px) {
+  body::before {
+    background-image: url("images/bg-intro-desktop.png");
+  }
+}
 
 #header-container {
   margin-top: 4rem;
@@ -36,14 +41,16 @@ body::before {
   font-weight: 600;
 }
 
-#hero-btn {
+#hero-container {
+  background-color: hsl(248, 32%, 49%);
+}
+#hero-container #hero-btn {
   background-color: hsl(248, 32%, 49%);
   box-shadow: 0 0.5rem 0.5rem rgba(62, 60, 73, 0.4);
 }
 
 #form-container {
   background-color: white;
-  width: 84.99999999%;
   box-shadow: 0 0.5rem 0.5rem rgba(62, 60, 73, 0.4);
 }
 #form-container .invalid-feedback {

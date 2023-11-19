@@ -6,6 +6,12 @@ $accent-blue: hsl(248, 32%, 49%);
 $neutral-dark-blue: hsl(249, 10%, 26%);
 $neutral-grayish-blue: hsl(246, 25%, 77%);
 
+@mixin media-query($size) {
+  @media only screen and (min-width: $size) {
+    @content;
+  }
+}
+
 
 * {
   margin: 0;
@@ -37,6 +43,10 @@ body {
     background-size: cover;
     background-repeat: repeat-y;
     z-index: -1;
+
+    @include media-query(768px) {
+      background-image: url('images/bg-intro-desktop.png');
+    }
   }
 }
 
@@ -48,15 +58,22 @@ body {
   }
 }
 
-#hero-btn {
+#hero-container {
   background-color: $accent-blue;
-  box-shadow: 0 0.5rem 0.5rem rgba($neutral-dark-blue, 0.4);
+
+  #hero-btn {
+    background-color: $accent-blue;
+    box-shadow: 0 0.5rem 0.5rem rgba($neutral-dark-blue, 0.4);
+  }
 }
+
+
 
 #form-container {
   background-color: white;
-  width: 84.99999999%;
+  // width: 84.99999999%;
   box-shadow: 0 0.5rem 0.5rem rgba($neutral-dark-blue, 0.4);
+
 
   .invalid-feedback {
     display: inherit;

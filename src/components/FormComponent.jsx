@@ -9,7 +9,7 @@ export default function FormComponent() {
   const password = useRef(null);
 
   return (
-    <div id="form-container" className="container mb-3 d-grid rounded-3">
+    <div id="form-container" className="container col-11 mb-3 d-grid rounded-3">
 
       <Form className="rounded-3 mx-3" onSubmit={(e) => {
         e.preventDefault();
@@ -93,7 +93,7 @@ export default function FormComponent() {
         </div>
 
         <div className="text-center">
-          <p id="term-text">By clicking the button, you are agreeing to our <span className="text-danger fw-bold">Terms and Services</span>
+          <p id="term-text">By clicking the button, you are agreeing to our <a className="text-danger fw-bold" href="https://www.linkedin.com/in/luyvannda/" target="_blank" rel="noreferrer">Terms and Services</a>
           </p>
         </div>
       </Form>

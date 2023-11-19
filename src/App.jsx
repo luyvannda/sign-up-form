@@ -7,14 +7,20 @@ import Hero from './components/Hero'
 function App() {
 
   return (
-    <>
-      <Header />
+    <div className='container-fluid'>
+      <div className="row d-flex justify-content-center align-items-center">
+        <div className="col-md-6 col-lg-5">
+          <Header />
+        </div>
 
-      <Hero />
-      <FormComponent />
+        <div className="col-md-6 col-lg-5 mt-5">
+          <Hero />
+          <FormComponent />
+        </div>
+      </div>
 
       <Footer />
-    </>
+    </div>
   )
 }
 
