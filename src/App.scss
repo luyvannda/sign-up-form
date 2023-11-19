@@ -28,9 +28,12 @@ $neutral-grayish-blue: hsl(246, 25%, 77%);
 body {
   font-family: 'Poppins', sans-serif;
   background-color: $primary-red;
-  min-height: 100vh;
   background-repeat: repeat-y;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   &::before {
     content: '';

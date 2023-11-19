@@ -12,9 +12,12 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: hsl(0, 100%, 74%);
-  min-height: 100vh;
   background-repeat: repeat-y;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 body::before {
   content: "";
