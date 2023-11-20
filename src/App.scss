@@ -42,13 +42,13 @@ body {
     left: 0;
     width: 100%;
     min-height: 100vh;
-    background-image: url('./images/bg-intro-mobile.png');
+    background-image: url('bg-intro-mobile.png');
     background-size: cover;
     background-repeat: repeat-y;
     z-index: -1;
 
     @include media-query(768px) {
-      background-image: url('./images/bg-intro-desktop.png');
+      background-image: url('bg-intro-desktop.png');
     }
   }
 }
