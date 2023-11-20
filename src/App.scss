@@ -13,6 +13,14 @@ $neutral-grayish-blue: hsl(246, 25%, 77%);
 }
 
 
+// Define a mixin to add the d-block class to the invalid-feedback component
+@mixin show-invalid-feedback {
+  .invalid-feedback {
+    @extend .d-block;
+  }
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -78,17 +86,21 @@ body {
   box-shadow: 0 0.5rem 0.5rem rgba($neutral-dark-blue, 0.4);
 
 
-  .invalid-feedback {
-    display: inherit;
-    margin-top: 0.25rem;
-    font-size: 60%;
-    color: #dc3545;
-  }
-
   .form-control {
     color: $neutral-grayish-blue;
     font-weight: 500;
 
+  }
+
+  .form-control:invalid {
+    @include show-invalid-feedback;
+
+    .invalid-feedback {
+      display: block;
+      margin-top: 0.25rem;
+      font-size: 60%;
+      color: #dc3545;
+    }
   }
 }
 
@@ -100,6 +112,7 @@ body {
   font-size: 0.75rem;
   color: $neutral-grayish-blue;
 }
+
 
 
 .attribution {
