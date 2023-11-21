@@ -1,4 +1,4 @@
-# Frontend Mentor - Intro component with sign up form solution
+# Frontend Mentor - Intro component with sign up form solution built with React Bootstrap and Sass
 
 This is a solution to the [Intro component with sign up form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/luyvannda/sign-up-form)
-- Live Site URL: [Add live site URL here](https://luyvannda.github.io/sign-up-form/)
+- Solution URL: (https://github.com/luyvannda/sign-up-form)
+- Live Site URL: (https://luyvannda.github.io/sign-up-form/)
 
 ## My process
 
@@ -37,18 +37,18 @@ Users should be able to:
 - [React](https://reactjs.org/) - JS library
 - Sass
 - Bootstrap 5
+- React Bootstrap
 - Mobile-first workflow
 
 
 ### What I learned
 
-I learned to combine React Bootstrap with Sass to create a responsive web page for this project. 
+I learned to combine Bootstrap 5, React Bootstrap with Sass to create a responsive web page for this project. 
 
 
 ### Continued development
 
-I am still not able to figure out how to toggle the form control feedback after form is submitted. For now, need to delve deeper into both React and React Bootstrap in form validation.
-
+I found myself having to replace vanilla Bootstrap 5 with React Bootstrap for form validation otherwise there were issues where form feedbacks were always shown on screen all the time. With React Bootstrap, I managed to set up form feedbacks so that they display differently for valid and invalid input. Will need to work more with React Bootstrap form validation in future projects for improvement.
 
 ## Author
 
