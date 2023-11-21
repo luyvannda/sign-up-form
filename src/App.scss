@@ -13,14 +13,6 @@ $neutral-grayish-blue: hsl(246, 25%, 77%);
 }
 
 
-// Define a mixin to add the d-block class to the invalid-feedback component
-@mixin show-invalid-feedback {
-  .invalid-feedback {
-    @extend .d-block;
-  }
-}
-
-
 * {
   margin: 0;
   padding: 0;
@@ -50,13 +42,13 @@ body {
     left: 0;
     width: 100%;
     min-height: 100vh;
-    background-image: url('/public/bg-intro-mobile.png');
+    background-image: url('/bg-intro-mobile.png');
     background-size: cover;
     background-repeat: repeat-y;
     z-index: -1;
 
     @include media-query(768px) {
-      background-image: url('/public/bg-intro-desktop.png');
+      background-image: url('/bg-intro-desktop.png');
     }
   }
 }
@@ -82,7 +74,6 @@ body {
 
 #form-container {
   background-color: white;
-  // width: 84.99999999%;
   box-shadow: 0 0.5rem 0.5rem rgba($neutral-dark-blue, 0.4);
 
 
@@ -92,16 +83,6 @@ body {
 
   }
 
-  .form-control:invalid {
-    @include show-invalid-feedback;
-
-    .invalid-feedback {
-      display: block;
-      margin-top: 0.25rem;
-      font-size: 60%;
-      color: #dc3545;
-    }
-  }
 }
 
 #form-btn {
